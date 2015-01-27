@@ -1,11 +1,7 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-	</head>
+@extends('layouts.default')
 
-	<body>
-		<h1>All Users</h1>
+@section('content')
 
-	</body>
-</html>
+<h1>All Users</h1>
+
+@stop

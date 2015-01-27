@@ -1,11 +1,8 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-	</head>
+@extends('layouts.default')
 
-	<body>
-		<h1>Home</h1>
-		<h2>Welcome, {{ $name }}</h2>
-	</body>
-</html>
+@section('content')
+
+<h1>Home</h1>
+<h2>Welcome, {{ $name }}</h2>
+
+@stop

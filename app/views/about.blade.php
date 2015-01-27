@@ -1,10 +1,7 @@
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-	</head>
+@extends('layouts.default')
 
-	<body>
-		<h1>About Page</h1>
-	</body>
-</html>
+@section('content')
+
+<h1>About Page</h1>
+
+@stop
