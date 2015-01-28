@@ -17,7 +17,14 @@ class UsersController extends \BaseController {
 	}
 	
 	public function store() {
-	       return 'create the new user given the post data.';
+
+	       $user = new User;
+	       $user->Name = Input::get('Name');
+	       $user->Password = Hash::make(Input::get('Password'));
+	       // Problem with save line, could be lines above and how user instance data is stored by name
+	       $user->save();
+
+	       return Redirect::route('users.index');
 	}
 
 }
