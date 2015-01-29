@@ -2,13 +2,19 @@
 
 class UsersController extends \BaseController {
 
+      protected $user;
+
+      	public function __construct(User $user) {
+	       $this->user = $user;
+      }
+
 	public function index()	{
-               $users = User::all();
+               $users = $this->user->all();
                return View::make('users.index', ['users' => $users]);
 	}
 
 	public function show($username)	{
-	       $user = User::where('Name', $username)->first();
+	       $user = $this->user->where('Name', $username)->first();
                return View::make('users.show', ['user' => $user]);
 	}
 
@@ -18,11 +24,13 @@ class UsersController extends \BaseController {
 	
 	public function store() {
 
-	       $user = new User;
-	       $user->Name = Input::get('Name');
-	       $user->Password = Hash::make(Input::get('Password'));
-	       // Problem with save line, could be lines above and how user instance data is stored by name
-	       $user->save();
+	       $input = Input::all();
+
+	       if (! $this->user->fill($input)->isValid()) {
+	       	  return Redirect::back()->withInput()->withErrors($this->user->errors);
+	       }
+
+	       $this->user->save();
 
 	       return Redirect::route('users.index');
 	}
