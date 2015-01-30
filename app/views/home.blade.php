@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('header')
-	{{ HTML::style('css/home.css') }}
+	{{ HTML::style('css/default.css') }}
 	<title>ISEF Home</title>
 	<h1>Introduction to Software Engineering Facebook</h1>
 @stop

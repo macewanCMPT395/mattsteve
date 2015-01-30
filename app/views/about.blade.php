@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('header')
-        {{ HTML::style('css/about.css') }}
+        {{ HTML::style('css/default.css') }}
         <title>ISEF About</title>
 	<h1>About Page</h1>
 @stop

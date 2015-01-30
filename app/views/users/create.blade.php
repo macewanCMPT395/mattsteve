@@ -2,7 +2,7 @@
 
 
 @section('header')
-        {{ HTML::style('css/create.css') }}
+        {{ HTML::style('css/default.css') }}
         <title>ISEF Create User</title>
 	<h1>Create User Profile</h1>
 @stop

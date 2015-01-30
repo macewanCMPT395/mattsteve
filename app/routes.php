@@ -26,4 +26,4 @@ Route::get('admin', function()
 
     return 'Admin Page';
 
-});
+})->before('auth');

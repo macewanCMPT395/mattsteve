@@ -31,9 +31,10 @@ class UsersController extends \BaseController {
 	       }
 
 	       $this->user->password = Hash::make(Input::get('password'));
+	       $this->user->remember_token = 'default';
 	       $this->user->save();
 
-	       return Redirect::route('users.index');
+	       return Redirect::route('users.show', Input::get('username'));
 	}
 
 }

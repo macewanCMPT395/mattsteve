@@ -10,10 +10,8 @@ class SessionsController extends \BaseController {
 
 	public function store() {
 	       if (Auth::attempt(Input::only('username', 'password'))) {
-	       	  //return 'Success';
-		  return "Welcome " . Auth::user()->username;
+		  return Redirect::route('users.show', Auth::user()->username);
 	       }
-	       //return Redirect::back()->withInput();
 	       return 'Failure';
 	}
 	
