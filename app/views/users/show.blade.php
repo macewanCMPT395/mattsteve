@@ -9,10 +9,10 @@
 @section('content')
 
 <div class="content">
-     <h1>{{$user->Name}}</h1>
-     <p>Email: {{$user->Email}}</p>
-     <p>Favourite Operating System: {{$user->FavOS}}</p>
-     <p>Favourite Browser: {{$user->FavBrowser}}</p>
+     <h1>{{$user->username}}</h1>
+     <p>Email: {{$user->email}}</p>
+     <p>Favourite Operating System: {{$user->favos}}</p>
+     <p>Favourite Browser: {{$user->favbrowser}}</p>
 
 </div>
 

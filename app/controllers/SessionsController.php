@@ -7,11 +7,12 @@ class SessionsController extends \BaseController {
 	}
 
 	public function store() {
-	       if (Auth::attempt(Input::only('Name', 'Password'))) {
+	       if (Auth::attempt(Input::only('username', 'password'))) {
 	       	  return 'Success';
 		  //return Auth::user();
 	       }
-	       return Redirect::back()->withInput();
+	       //return Redirect::back()->withInput();
+	       return 'Failure';
 	}
 	
 	public function destroy() {

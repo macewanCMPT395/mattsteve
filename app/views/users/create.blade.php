@@ -13,33 +13,33 @@
 <div class="content">
 	{{ Form::open(['route' => 'users.store']) }}
 	   <div>
-	   {{ Form::label('Name', 'Username: ') }}
-	   {{ Form::text('Name') }}
-	   {{ $errors->first('Name') }}
+	   {{ Form::label('username', 'Username: ') }}
+	   {{ Form::text('username') }}
+	   {{ $errors->first('username') }}
 	   </div>
 
 	   <div>
-	   {{ Form::label('Password', 'Password: ') }}
-	   {{ Form::password('Password') }}
-	   {{ $errors->first('Password') }}
+	   {{ Form::label('password', 'Password: ') }}
+	   {{ Form::password('password') }}
+	   {{ $errors->first('password') }}
 	   </div>
 
 	   <div>
-	   {{ Form::label('Email', 'Email: ') }}
-	   {{ Form::text('Email') }}
-	   {{ $errors->first('Email') }}
+	   {{ Form::label('email', 'Email: ') }}
+	   {{ Form::text('email') }}
+	   {{ $errors->first('email') }}
 	   </div>
 
 	   <div>
-	   {{ Form::label('FavOS', 'Favourite Operating System: ') }}
-	   {{ Form::text('FavOS') }}
-	   {{ $errors->first('FavOS') }}
+	   {{ Form::label('favos', 'Favourite Operating System: ') }}
+	   {{ Form::text('favos') }}
+	   {{ $errors->first('favos') }}
 	   </div>
 
 	   <div>
-	   {{ Form::label('FavBrowser', 'Favourite Browser: ') }}
-	   {{ Form::text('FavBrowser') }}
-	   {{ $errors->first('FavBrowser') }}
+	   {{ Form::label('favbrowser', 'Favourite Browser: ') }}
+	   {{ Form::text('favbrowser') }}
+	   {{ $errors->first('favbrowser') }}
 	   </div>
 
 	   <div> {{ Form::submit('Create User') }} </div>

@@ -14,7 +14,7 @@ class UsersController extends \BaseController {
 	}
 
 	public function show($username)	{
-	       $user = $this->user->where('Name', $username)->first();
+	       $user = $this->user->where('username', $username)->first();
 	       return View::make('users.show', ['user' => $user]);
 	}
 
@@ -30,6 +30,7 @@ class UsersController extends \BaseController {
 	       	  return Redirect::back()->withInput()->withErrors($this->user->errors);
 	       }
 
+	       $this->user->password = Hash::make(Input::get('password'));
 	       $this->user->save();
 
 	       return Redirect::route('users.index');

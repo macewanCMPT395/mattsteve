@@ -11,15 +11,15 @@
 <div class="content">
      {{ Form::open(['route' => 'sessions.store']) }}
            <div>
-           {{ Form::label('Name', 'Username: ') }}
-           {{ Form::text('Name') }}
-           {{ $errors->first('Name') }}
+           {{ Form::label('username', 'Username: ') }}
+           {{ Form::text('username') }}
+           {{ $errors->first('username') }}
            </div>
 
            <div>
-           {{ Form::label('Password', 'Password: ') }}
-           {{ Form::password('Password') }}
-           {{ $errors->first('Password') }}
+           {{ Form::label('password', 'Password: ') }}
+           {{ Form::password('password') }}
+           {{ $errors->first('password') }}
            </div>
 
 	   <div>{{ Form::submit('Login') }}</div>
