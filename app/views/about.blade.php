@@ -1,7 +1,17 @@
 @extends('layouts.default')
+@section('header')
+        {{ HTML::style('css/about.css') }}
+        <title>ISEF About</title>
+	<h1>About Page</h1>
+@stop
 
 @section('content')
 
-<h1>About Page</h1>
+<div class="content">
+     <h1>General Information</h1>
+     <p>The Introduction to Software Engineering Facebook is a web 
+     application made for students at MacEwan University. It allows
+     them to stay in contact and get to know their peers.</p>
+</div>
 
 @stop

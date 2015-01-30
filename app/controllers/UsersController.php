@@ -15,7 +15,7 @@ class UsersController extends \BaseController {
 
 	public function show($username)	{
 	       $user = $this->user->where('Name', $username)->first();
-               return View::make('users.show', ['user' => $user]);
+	       return View::make('users.show', ['user' => $user]);
 	}
 
 	public function create() {
