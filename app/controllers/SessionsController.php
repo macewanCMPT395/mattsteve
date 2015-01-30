@@ -11,7 +11,7 @@ class SessionsController extends \BaseController {
 	       	  return 'Success';
 		  //return Auth::user();
 	       }
-	       return 'Failed';
+	       return Redirect::back()->withInput();
 	}
 	
 	public function destroy() {
