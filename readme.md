@@ -1,5 +1,5 @@
 #Introduction To Software Engineering Facebook
-=============================================================================================================================
+-----------------------------------------------------------------------------------------------------------------------------
 Introduction
 -----------------------------------------------------------------------------------------------------------------------------
 This is the source code for our web application "Introduction To Software Engineering Facebook". Users can create accounts on the application and as well as view the information of other users on the app.
@@ -7,12 +7,14 @@ This is the source code for our web application "Introduction To Software Engine
 
 Installing
 -----------------------------------------------------------------------------------------------------------------------------
+To begin, first download [Composer][1] globally. This is the dependency manager for php. If using a Unix machine, this can be done by running 'curl -sS https://getcomposer.org/installer | php'  in the terminal. Once it is installed, move it into your bin by running "mv composer.phar /usr/local/bin/composer" in the terminal. 
+
+The next step is to get laravel installed. This can be done by running "composer create-project laravel/laravel learning". The program will then begin to compile all of the dependancies that laravel requires, and download them onto ur machine, and place them in a directory called "learning".
 
 
 
 
-
-
+[1]: https://getcomposer.org/
 
 
 
