@@ -2,17 +2,16 @@
 -----------------------------------------------------------------------------------------------------------------------------
 Introduction
 -----------------------------------------------------------------------------------------------------------------------------
-This is the source code for our web application "Introduction To Software Engineering Facebook". Users can create accounts on the application and as well as view the information of other users on the app.
+This is the source code for our web application "Introduction To Software Engineering Facebook". Users can create accounts on the application as well as view the information of other users on the app.
 
 
 Installing
 -----------------------------------------------------------------------------------------------------------------------------
-To begin, first download [Composer][1] globally. This is the dependency manager for php. If using a Unix machine, this can be done by running 'curl -sS https://getcomposer.org/installer | php'  in the terminal. Once it is installed, move it into your bin by running "mv composer.phar /usr/local/bin/composer" in the terminal. 
+To begin, first download [Composer][1] globally. This is the dependency manager for php. If using a Unix machine, this can be done by running 'curl -sS https://getcomposer.org/installer | php'  in the terminal. Once it is installed, move it into your bin directory by running "mv composer.phar /usr/local/bin/composer" in the terminal. 
 
-The next step is to get laravel installed. This can be done by running "composer create-project laravel/laravel learning". The program will then begin to compile all of the dependancies that laravel requires, and download them onto ur machine, and place them in a directory called "learning".
+The next step is to clone or fork this repository to your local machine. All components of laravel are included within this repository along with the files necessary to run the "Introduction To Software Engineering Facebook" app. There are many github tutorials that will show you how to clone or fork a repository. Please consult one if you require more information. Among the files in this repository is an editable sqlite database.
 
-
-Lastly to begin using the app, go into the learning directory by running in the command "cd learning", then run the command "php artisan serve". This will boot up a server that can be accessed at http://localhost:8000. Enter that url into the browser and you will be brought to the Introduction to software engineering facebook home page.
+Lastly to begin using the app, go into the cloned directory of this repository on your local machine by running the command "cd mattsteve/", then run the command "php artisan serve". This will boot up a server that can be accessed at http://localhost:8000. Enter that url into the browser and you will be brought to the Introduction To Software Engineering Facebook home page.
 
 
 
