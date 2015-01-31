@@ -4,9 +4,7 @@ class PagesController extends BaseController {
 
       public function home() {
 
-      	$name = 'New User';
-
-        return View::make('home')->with('name', $name);
+        return View::make('home');
 
       }
 
