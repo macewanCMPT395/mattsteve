@@ -20,4 +20,29 @@ class SessionsController extends \BaseController {
 	       return Redirect::to('/');
 	}
 
+	public function edit() {
+	       return View::make('sessions.edit');
+	}
+
+	public function update() {
+               //$input = Input::all();
+
+               //if (! $this->user->fill($input)->isValid()) {
+                  //return Redirect::back()->withInput()->withErrors($this->user->errors);
+               //}
+
+	       //$user = Auth::user();
+	       //$user = User::where('username', '=', Auth::user()->username);
+
+	       //$user->username = Input::get('username');
+               //$user->password = Hash::make(Input::get('password'));
+	       //$user->email = Input::get('email');
+	       //$user->favos = Input::get('favos');
+	       //$user->favbrowser = Input::get('favbrowser');
+
+               //$user->save();
+
+               //return Redirect::route('users.show');
+	}
+
 }

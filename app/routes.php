@@ -21,9 +21,3 @@ Route::get('logout', 'SessionsController@destroy');
 
 Route::resource('sessions', 'SessionsController');
 
-Route::get('admin', function() 
-{
-
-    return 'Admin Page';
-
-})->before('auth');
