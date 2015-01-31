@@ -1,3 +1,24 @@
+#Introduction To Software Engineering Facebook
+=============================================================================================================================
+Introduction
+-----------------------------------------------------------------------------------------------------------------------------
+This is the source code for our web application "Introduction To Software Engineering Facebook". Users can create accounts on the application and as well as view the information of other users on the app.
+
+
+Installing
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
