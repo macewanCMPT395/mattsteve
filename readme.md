@@ -12,6 +12,8 @@ To begin, first download [Composer][1] globally. This is the dependency manager 
 The next step is to get laravel installed. This can be done by running "composer create-project laravel/laravel learning". The program will then begin to compile all of the dependancies that laravel requires, and download them onto ur machine, and place them in a directory called "learning".
 
 
+Lastly to begin using the app, go into the learning directory by running in the command "cd learning", then run the command "php artisan serve". This will boot up a server that can be accessed at http://localhost:8000. Enter that url into the browser and you will be brought to the Introduction to software engineering facebook home page.
+
 
 
 [1]: https://getcomposer.org/
