@@ -19,5 +19,7 @@ Route::resource('users', 'UsersController');
 Route::get('login', 'SessionsController@create');
 Route::get('logout', 'SessionsController@destroy');
 
+Route::post('sessions/updateuser', array('as' => 'sessions.updateuser', 'uses' => 'SessionsController@updateinfo'));
+
 Route::resource('sessions', 'SessionsController');
 

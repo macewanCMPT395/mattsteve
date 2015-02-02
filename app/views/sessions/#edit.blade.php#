@@ -15,7 +15,7 @@
      <p>Favourite Browser: {{Auth::user()->favbrowser}}</p>
 
      <div class="updateform">
-     	  {{ Form::open(['route' => 'sessions.updateuser']) }}
+     	  {{ Form::open(['route' => 'updateinfo']) }}
 
      	  <div>
 		{{ Form::label('username', 'Username: ') }}

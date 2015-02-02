@@ -24,25 +24,21 @@ class SessionsController extends \BaseController {
 	       return View::make('sessions.edit');
 	}
 
-	public function update() {
-               //$input = Input::all();
+	public function updateinfo() {
+               $input = Input::all();
 
-               //if (! $this->user->fill($input)->isValid()) {
-                  //return Redirect::back()->withInput()->withErrors($this->user->errors);
-               //}
+	       $user = User::find(Auth::user()->id);
 
-	       //$user = Auth::user();
-	       //$user = User::where('username', '=', Auth::user()->username);
+	       $user->username = Input::get('username');
+               $user->password = Hash::make(Input::get('password'));
+	       $user->email = Input::get('email');
+	       $user->favos = Input::get('favos');
+	       $user->favbrowser = Input::get('favbrowser');
 
-	       //$user->username = Input::get('username');
-               //$user->password = Hash::make(Input::get('password'));
-	       //$user->email = Input::get('email');
-	       //$user->favos = Input::get('favos');
-	       //$user->favbrowser = Input::get('favbrowser');
+               $user->save();
 
-               //$user->save();
+	       return Redirect::route('users.show', $user->username);
 
-               //return Redirect::route('users.show');
 	}
 
 }
