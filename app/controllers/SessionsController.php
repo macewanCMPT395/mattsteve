@@ -12,7 +12,7 @@ class SessionsController extends \BaseController {
 	       if (Auth::attempt(Input::only('username', 'password'))) {
 		  return Redirect::route('users.show', Auth::user()->username);
 	       }
-	       return 'Failure';
+	       return Redirect::back()->withInput()->withErrors(array('password' => 'Invalid Password or username'));
 	}
 	
 	public function destroy() {
